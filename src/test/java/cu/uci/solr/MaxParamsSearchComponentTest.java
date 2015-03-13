@@ -56,9 +56,6 @@ public class MaxParamsSearchComponentTest extends SolrTestCaseJ4 {
     assertU(commit());
     assertU(optimize());
 
-    System.out.println(h.query(req("q", "*:*", "rows", Integer.toString(400),
-        CommonParams.QT, "/overwrite")));
-
     assertQ("the parameters haven't been overwritten",
         req(CommonParams.Q, "*:*", CommonParams.ROWS, Integer.toString(400),
             CommonParams.QT, "/overwrite"),
