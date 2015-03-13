@@ -40,9 +40,9 @@ public class MaxParamsSearchComponent extends SearchComponent
       maxRowsParam = params.getInt("rows", -1);
       maxStartParam = params.getInt("start", -1);
 
-      if (maxRowsParam == -1 || maxStartParam == -1) {
+      if (maxRowsParam == -1 && maxStartParam == -1) {
         throw new SolrException(SolrException.ErrorCode.SERVER_ERROR,
-            "You must set the rows and start parameters in the configuration of this component");
+            "You must set the rows or start parameters in the configuration of this component");
       }
 
       overwriteParams = params.getBool("overwriteParams", false);
@@ -103,3 +103,4 @@ public class MaxParamsSearchComponent extends SearchComponent
     return "MaxParamsSearchComponent.java";
   }
 }
+
