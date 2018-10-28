@@ -49,7 +49,6 @@ public class MaxParamsSearchComponent extends SearchComponent
     }
   }
 
-  @Override
   public void inform(SolrCore core) {
 
   }

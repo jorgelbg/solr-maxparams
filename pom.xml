@@ -20,7 +20,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.talosdigital.InvertedIndex
+                            <mainClass>cu.uci.solr.MaxParamsSearchComponent
                             </mainClass>
                         </manifest>
                     </archive>
@@ -33,27 +33,27 @@
         <dependency>
             <groupId>org.apache.solr</groupId>
             <artifactId>solr-core</artifactId>
-            <version>4.10.2</version>
+            <version>[7.1.0,)</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.solr</groupId>
             <artifactId>solr-test-framework</artifactId>
-            <version>4.10.1</version>
+            <version>[7.1.0,)</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-test-framework</artifactId>
-            <version>4.10.2</version>
+            <version>[7.1.0,)</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-core</artifactId>
-            <version>4.10.2</version>
+            <version>[7.1.0,)</version>
             <scope>test</scope>
         </dependency>
 
